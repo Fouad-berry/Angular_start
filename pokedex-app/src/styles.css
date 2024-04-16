@@ -2,3 +2,35 @@
 body{
     background-color: beige;
 }
+.search-container {
+    text-align: center;
+  }
+  .search {
+    width: 25%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .search::placeholder {
+    color: #999;
+  }
+    .pokemon-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .pokemon-card {
+      width: 30%;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }

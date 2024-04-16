@@ -1,0 +1,11 @@
+<div class="search-container">
+    <input class="search" type="text" placeholder="Rechercher un Pokémon" [(ngModel)]="searchTerm" (input)="filterPokemon()">
+  <div>
+    <div class="pokemon-list">
+      <div class="pokemon-card" *ngFor="let pokemon of filteredPokemonList">
+        <img [src]="pokemon.picture" alt="{{ pokemon.name }}">
+        <h2>{{ pokemon.name }}</h2>
+        <p>Type: {{ pokemon.types }}</p>
+        <p>Date de création: {{ pokemon.created }}</p>
+      </div>
+    </div>
